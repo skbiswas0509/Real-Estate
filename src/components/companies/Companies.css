@@ -1,0 +1,16 @@
+.c-container{
+    display: flex;
+    row-gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    gap: 1rem;
+
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.c-container>img{
+    width: 9rem;
+}
