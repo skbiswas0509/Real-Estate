@@ -1,0 +1,50 @@
+.f-container{
+    display: flex;
+    row-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 100%;
+}
+.f-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    gap: 1rem;
+}
+.f-left>:nth-child(2){
+    color: rgb(140 139 139);
+    font-size: 0.9rem;
+}
+
+.f-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.f-right>:nth-child(1){
+    color: #1f3e72;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.f-right>:nth-child(2){
+    color: rgb(140 139 139);
+    font-size: 0.9rem;
+}
+.f-menu{
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+@media(max-width: 768px){
+    .f-container{
+        justify-content: center;
+    }
+    .f-container>div{
+        align-items: center!important;
+        text-align: center;
+    }
+}

@@ -36,15 +36,71 @@
     font-size: 0.9rem;
 }
 
+
+.acc-item-detail{
+    color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+.accordion{
+    margin-top: 2rem;
+    border: none;
+}
+.accordionItem{
+    background: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordionItem.expanded{
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+
+}
+.accordionButton{
+    display: flex;
+    row-gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .icon{
     display: flex;
     grid-area: 2rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
 }
 
-.acc-item-detail{
-    color: rgb(140 139 139);
-  font-size: 0.9rem;
+.icon svg{
+    fill: var(--blue);
+}
+
+.accItemHeading{
+    color: #1f3e72;
+    font-weight: bold;
+
+    font-size: 1.1rem;
+}
+
+@media(max-width: 1024){
+    .v-container{
+        flex-direction: column;
+    }
+    @media(max-width: 768px){
+        .accItemHeading{
+            font-size: 0.8rem;
+        }
+    }
 }
